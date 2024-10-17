@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ActiveRecordTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ActiveRecordTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/pl.edu.agh.iisg.to.html">pl.edu.agh.iisg.to</a> &gt; ActiveRecordTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.311s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">courseCanBeFoundById()</td>
+<td class="success">0.024s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">courseConsistsOfEnrolledStudents()</td>
+<td class="success">0.041s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">courseStudentListIsCached()</td>
+<td class="success">0.043s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">courseWithUniqueNameCanBeCreated()</td>
+<td class="success">0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">studentCanBeEnrolledInCourseOnce()</td>
+<td class="success">0.031s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">studentCanBeFoundById()</td>
+<td class="success">0.022s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">studentCanBeFoundByIndexNumber()</td>
+<td class="success">0.026s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">studentCanBeGraded()</td>
+<td class="success">0.053s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">studentWithUniqueIndexNumberCanBeCreated()</td>
+<td class="success">0.034s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>38
+39
+40
+41
+42
+43
+44
+45
+46
+Optional[pl.edu.agh.iisg.to.model.Student@321244a9]
+Optional[pl.edu.agh.iisg.to.model.Student@8fc4b304]
+Optional.empty
+47
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+INFO: Loading driver
+SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+INFO: Connection created
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.connection.ConnectionProvider close
+INFO: Closing connection
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+INFO: Loading driver
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+INFO: Connection created
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+INFO: Creating table Student
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+INFO: Creating table Course
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+INFO: Creating table Student_Course
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+INFO: Creating table Grade
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: Select * FROM student_course WHERE student_id = ? and course_id = ?; executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: Select * FROM student_course WHERE student_id = ? and course_id = ?; executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student s INNER JOIN student_course sc ON s.id = sc.student_id where course_id = ?; executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student s INNER JOIN student_course sc ON s.id = sc.student_id where course_id = ?; executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: Select * FROM student_course WHERE student_id = ? and course_id = ?; executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: Select * FROM student_course WHERE student_id = ? and course_id = ?; executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student s INNER JOIN student_course sc ON s.id = sc.student_id where course_id = ?; executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: Select * FROM student_course WHERE student_id = ? and course_id = ?; executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: Select * FROM student_course WHERE student_id = ? and course_id = ?; executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_UNIQUE] A UNIQUE constraint failed (UNIQUE constraint failed: course.name)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:985)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$execute$0(JDBC3PreparedStatement.java:59)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.execute(JDBC3PreparedStatement.java:53)
+	at pl.edu.agh.iisg.to.executor.QueryExecutor.createAndObtainId(QueryExecutor.java:65)
+	at pl.edu.agh.iisg.to.model.Course.create(Course.java:38)
+	at pl.edu.agh.iisg.to.ActiveRecordTest.courseWithUniqueNameCanBeCreated(ActiveRecordTest.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:515)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_UNIQUE] A UNIQUE constraint failed (UNIQUE constraint failed: student.index_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:985)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$execute$0(JDBC3PreparedStatement.java:59)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.execute(JDBC3PreparedStatement.java:53)
+	at pl.edu.agh.iisg.to.executor.QueryExecutor.createAndObtainId(QueryExecutor.java:65)
+	at pl.edu.agh.iisg.to.model.Student.create(Student.java:36)
+	at pl.edu.agh.iisg.to.ActiveRecordTest.studentWithUniqueIndexNumberCanBeCreated(ActiveRecordTest.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:515)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE id = (?) executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM student WHERE index_number = ?; executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+paź 17, 2024 10:31:58 PM pl.edu.agh.iisg.to.connection.ConnectionProvider close
+INFO: Closing connection
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.10.1</a> at 17 paź 2024, 22:31:58</p>
+</div>
+</div>
+</body>
+</html>
